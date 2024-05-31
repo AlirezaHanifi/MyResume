@@ -1,0 +1,173 @@
+%------------------------------------------------------
+% My Resume in LaTeX 
+% Author: Alireza Hanifi
+% Inspired by:  
+% https://github.com/sb2nov/resume &
+% https://github.com/posquit0/Awesome-CV
+%------------------------------------------------------
+
+\documentclass[11pt, a4paper]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{datetime}
+\input{glyphtounicode}
+
+% Helper command to format month and year
+\newdateformat{monthyear}{\THEYEAR~\monthname[\THEMONTH]}
+
+% Page style
+\usepackage{tabularx} % Make sure this package is included
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{
+    \begin{tabularx}{\textwidth}{@{}lXr@{}}
+        \footnotesize \monthyear\today & \centering\footnotesize Alireza Hanifi . Résumé & \footnotesize \thepage
+    \end{tabularx}
+}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+% URL style
+\urlstyle{same}
+
+% Section Formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure machine readability of PDF
+\pdfgentounicode=1
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+% Custom lists
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+
+% Heading
+\begin{center}
+    {\Huge \textbf{Alireza Hanifi}} \\[1ex]
+    {\Large \textbf{Data Engineer}} \\[1ex]
+    Tehran, Iran $|$
+    \href{tel:+989383385818}{(+98) 938-338-5818} $|$
+    \href{mailto:a.hanifi1375@gmail.com}{a.hanifi1375@gmail.com} \\[.5ex]
+    \href{https://www.linkedin.com/in/alireza-hanifi}{linkedin.com/in/alireza-hanifi} $|$
+    \href{https://github.com/AlirezaHanifi}{github.com/AlirezaHanifi} $|$
+    \href{https://alirezahanifi.github.io/}{alirezahanifi.github.io}
+\end{center}
+
+% About Me
+\section{About Me}
+I am a Data Analyst and Business Intelligence (BI) Developer passionate about using data to make businesses run smoother. I am always eager to learn new skills and technologies to improve my work. I excel at collaborating with others to translate data into clear insights that drive better decision-making. I am a problem-solver who loves optimizing processes and boosting efficiency.
+
+% Experience
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {blu Bank}{Tehran, Iran}
+        {Business Intelligence Developer}{Jan 2024 - Present}
+        \resumeItemListStart
+            \resumeItem{Refactored Apache Airflow pipelines (20+ DAGs, 40+ tables) and implemented a star schema for efficient data analysis.}
+            \resumeItem{Tuned PostgreSQL performance using indexing and data storage strategies.}
+            \resumeItem{Empowered product managers with actionable insights for Box \& PFM products by creating Metabase dashboards and defining key metrics.}
+            \resumeItem{Ensured marketing campaign effectiveness through pre-launch validation, in-campaign monitoring, and post-campaign analysis.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Mofid Securities}{Tehran, Iran}
+        {Business Intelligence Analyst}{Sep 2022 - Dec 2023 (1 yr 4 mos)}
+        \resumeItemListStart
+            \resumeItem{Redesigned and implemented data models and algorithms to clean, transform, and validate data, saving up to 2 hours of daily work.}
+            \resumeItem{Created and maintained over 50 dashboards using tools such as Tableau and Grafana, effectively communicating complex data findings.}
+            \resumeItem{Collaborated with cross-functional teams to define data requirements and interpret results, driving data-driven decision-making.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {HamTech}{Tehran, Iran}
+        {Artificial Intelligence Intern}{Aug 2022 - Oct 2022 (3 mos)}
+        \resumeItemListStart
+            \resumeItem{Developed InsightiFi, a tool utilizing machine learning algorithms and technical analysis for investment insights, leading to increased profits.}
+            \resumeItem{Deployed the product using Docker to create a prediction service and API with FastAPI.}
+            \resumeItem{Facilitated the process by communicating business requirements and providing comprehensive instructions.}
+        \resumeItemListEnd
+    \resumeSubheading
+        {Mofid Academy}{Tehran, Iran}
+        {Finance Intern}{Jul 2022 - Sep 2022 (3 mos)}
+        \resumeItemListStart
+            \resumeItem{Acquired expertise in TSE and trading tools, and gained familiarity with CRM skills.}
+            \resumeItem{Contributed to research projects on applying AI in finance and data analysis on investment fund portfolios.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% Education
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Isfahan University of Technology}{Isfahan, Iran}
+        {B.Sc. in Mechanical Engineering}{Sep 2015 -- Feb 2020}
+\resumeSubHeadingListEnd
+
+% Courses
+\section{Courses}
+\resumeSubHeadingListStart
+    \resumeItem{Digital Product Management (Bozhan school) [In Progress]}
+    \resumeItem{Deep Learning Specialization by Andrew Ng (Coursera.org) [Certified]}
+    \resumeItem{Machine Learning with Python by Jadi (Maktabkhooneh.org) [Certified]}
+    \resumeItem{SQL for Data Science (Coursera.org) [Certified]}
+    \resumeItem{Linux (Quera.org) [Certified]}
+\resumeSubHeadingListEnd
+
+% Technical Skills
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Data Science}{: Data Analysis, Data Visualization, Reporting \& Analysis, Data Engineering, Machine Learning} \\
+        \textbf{Tools}{: Python (Scikit-learn, Pandas, NumPy, Matplotlib, FastAPI), JavaScript (Apache ECharts), Tableau, Grafana, PostgreSQL, Microsoft SQL Server, Docker} \\
+        \textbf{General Tools}{: Git, Microsoft Office, Confluence, Jira, Trello} \\
+        \textbf{Languages}{: English (Fluent), Persian (Native)}
+    }}
+\end{itemize}
+
+\end{document}
