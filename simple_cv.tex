@@ -27,7 +27,7 @@
 \newdateformat{monthyear}{\THEYEAR~\monthname[\THEMONTH]}
 
 % Page style
-\usepackage{tabularx} % Make sure this package is included
+\usepackage{tabularx}
 
 \pagestyle{fancy}
 \fancyhf{}
@@ -59,7 +59,7 @@
 \newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
 \newcommand{\resumeSubheading}[4]{
     \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.99\textwidth}{@{\extracolsep{\fill}}lr}
         \textbf{#1} & #2 \\
         \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -91,53 +91,51 @@
 % Heading
 \begin{center}
     {\Huge \textbf{Alireza Hanifi}} \\[1ex]
-    {\Large \textbf{Data Engineer}} \\[1ex]
+    {\Large \textbf{Data Engineer $|$ BI Developer}} \\[1ex]
     Tehran, Iran $|$
     \href{tel:+989383385818}{(+98) 938-338-5818} $|$
     \href{mailto:a.hanifi1375@gmail.com}{a.hanifi1375@gmail.com} \\[.5ex]
-    \href{https://www.linkedin.com/in/alireza-hanifi}{linkedin.com/in/alireza-hanifi} $|$
+    \href{https://www.linkedin.com/in/Alireza-Hanifi}{linkedin.com/in/Alireza-Hanifi} $|$
     \href{https://github.com/AlirezaHanifi}{github.com/AlirezaHanifi} $|$
-    \href{https://alirezahanifi.github.io/}{alirezahanifi.github.io}
+    \href{https://AlirezaHanifi.github.io/}{AlirezaHanifi.github.io}
 \end{center}
 
 % About Me
 \section{About Me}
-I am a Data Analyst and Business Intelligence (BI) Developer passionate about using data to make businesses run smoother. I am always eager to learn new skills and technologies to improve my work. I excel at collaborating with others to translate data into clear insights that drive better decision-making. I am a problem-solver who loves optimizing processes and boosting efficiency.
+I'm a BI Developer with more than 2 years of experience, dedicated to leveraging data to solve business challenges. As I progress in the data realm, I aim to shift into a Data Engineer role. Building data pipelines and managing substantial datasets has motivated me to pursue complex data infrastructure tasks.
 
 % Experience
 \section{Experience}
 \resumeSubHeadingListStart
     \resumeSubheading
-        {blu Bank}{Tehran, Iran}
+        {\href{https://blubank.sb24.ir/}{blu Bank}}{Tehran, Iran}
         {Business Intelligence Developer}{Jan 2024 - Present}
         \resumeItemListStart
-            \resumeItem{Refactored Apache Airflow pipelines (20+ DAGs, 40+ tables) and implemented a star schema for efficient data analysis.}
-            \resumeItem{Tuned PostgreSQL performance using indexing and data storage strategies.}
-            \resumeItem{Empowered product managers with actionable insights for Box \& PFM products by creating Metabase dashboards and defining key metrics.}
-            \resumeItem{Ensured marketing campaign effectiveness through pre-launch validation, in-campaign monitoring, and post-campaign analysis.}
+            \resumeItem{Built and improved Airflow pipelines (20+ DAGs, 40+ tables) and implemented a star schema for efficient data analysis.}
+            \resumeItem{Optimized PostgreSQL performance with indexing and storage strategies, reducing table sizes by up to 80\% and improving query response times by up to 50\%.}
+            \resumeItem{Developed Metabase dashboards and defined key metrics, providing product managers with actionable insights for the Box and PFM sections, leading to nearly 100\% new user acquisition for these features within 3 months.}
+            \resumeItem{Enhanced marketing campaign effectiveness through pre-launch validation, in-campaign monitoring, and post-campaign analysis, resulting in a 2\% increase in deposits with the round-up campaign.}
+            \resumeItem{Collaborated effectively with cross-functional teams to ensure alignment on data requirements and interpretations, fostering data-driven decision-making across departments.}
         \resumeItemListEnd
+        \vspace{0.5\baselineskip}
+        
     \resumeSubheading
-        {Mofid Securities}{Tehran, Iran}
+        {\href{https://www.emofid.com/}{Mofid Securities}}{Tehran, Iran}
         {Business Intelligence Analyst}{Sep 2022 - Dec 2023 (1 yr 4 mos)}
         \resumeItemListStart
-            \resumeItem{Redesigned and implemented data models and algorithms to clean, transform, and validate data, saving up to 2 hours of daily work.}
-            \resumeItem{Created and maintained over 50 dashboards using tools such as Tableau and Grafana, effectively communicating complex data findings.}
-            \resumeItem{Collaborated with cross-functional teams to define data requirements and interpret results, driving data-driven decision-making.}
+            \resumeItem{Revamped and implemented data models and algorithms to clean, transform, and validate data, reducing daily workload by up to 2 hours.}
+            \resumeItem{Designed and managed 50+ dashboards using tools like Tableau and Grafana, effectively communicating complex data insights.}
+            \resumeItem{Partnered with cross-functional teams to define data needs and interpret results, facilitating data-driven decision-making.}
         \resumeItemListEnd
+        \vspace{0.5\baselineskip}
+
     \resumeSubheading
-        {HamTech}{Tehran, Iran}
-        {Artificial Intelligence Intern}{Aug 2022 - Oct 2022 (3 mos)}
-        \resumeItemListStart
-            \resumeItem{Developed InsightiFi, a tool utilizing machine learning algorithms and technical analysis for investment insights, leading to increased profits.}
-            \resumeItem{Deployed the product using Docker to create a prediction service and API with FastAPI.}
-            \resumeItem{Facilitated the process by communicating business requirements and providing comprehensive instructions.}
-        \resumeItemListEnd
-    \resumeSubheading
-        {Mofid Academy}{Tehran, Iran}
+        {\href{https://mofidacademy.com//}{Mofid Academy}}{Tehran, Iran}
         {Finance Intern}{Jul 2022 - Sep 2022 (3 mos)}
         \resumeItemListStart
-            \resumeItem{Acquired expertise in TSE and trading tools, and gained familiarity with CRM skills.}
-            \resumeItem{Contributed to research projects on applying AI in finance and data analysis on investment fund portfolios.}
+            \resumeItem{Mastered Tehran Stock Exchange and trading tools, and improved proficiency in CRM skills.}
+            \resumeItem{Contributed to research projects applying AI in finance and conducted data analysis for investment strategies.}
+            \resumeItem{Developed strong analytical abilities and efficient scheduling through research and analysis of financial data, supporting investment strategy development.}
         \resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -145,29 +143,28 @@ I am a Data Analyst and Business Intelligence (BI) Developer passionate about us
 \section{Education}
 \resumeSubHeadingListStart
     \resumeSubheading
-        {Isfahan University of Technology}{Isfahan, Iran}
-        {B.Sc. in Mechanical Engineering}{Sep 2015 -- Feb 2020}
+        {\href{https://english.iut.ac.ir/}{Isfahan University of Technology}}{Isfahan, Iran}
+        {B.Sc. in Mechanical Engineering}{Sep 2015 - Feb 2020}
+\resumeSubHeadingListEnd
+
+% Technical Skills
+\section{Technical Skills}
+\resumeSubHeadingListStart
+    \resumeItem{\textbf{Languages}: Python (FastAPI, Matplotlib, NumPy, Pandas, Polars, Seaborn), SQL, Bash}
+    \resumeItem{\textbf{Data Technologies}: Airflow, Spark, Kafka, PostgreSQL, Oracle, ClickHouse, MongoDB, Minio}
+    \resumeItem{\textbf{Data Engineering}: ETL, Data Modeling and Design, Performance Tuning}
+    \resumeItem{\textbf{Tools}: Docker, Git, Grafana, Tableau, Confluence, Jira, Trello}
+    \resumeItem{\textbf{Additional}: Machine Learning, Data Analysis and Visualization, Reporting}
+    \resumeItem{\textbf{Languages}: English (Fluent), Persian (Native)}
 \resumeSubHeadingListEnd
 
 % Courses
 \section{Courses}
 \resumeSubHeadingListStart
-    \resumeItem{Digital Product Management (Bozhan school) [In Progress]}
-    \resumeItem{Deep Learning Specialization by Andrew Ng (Coursera.org) [Certified]}
-    \resumeItem{Machine Learning with Python by Jadi (Maktabkhooneh.org) [Certified]}
-    \resumeItem{SQL for Data Science (Coursera.org) [Certified]}
-    \resumeItem{Linux (Quera.org) [Certified]}
+    \resumeItem{Digital Product Management (Bozhan)}
+    \resumeItem{Deep Learning Specialization by Andrew Ng (Coursera)}{\href{https://www.coursera.org/account/accomplishments/specialization/EN3BD5D7X97H}{[Certified]}}
+    \resumeItem{Machine Learning with Python by Jadi (Maktabkhooneh)}{\href{https://maktabkhooneh.org/certificates/MK-KVBCQB/}{[Certified]}}
+    \resumeItem{SQL for Data Science (Coursera)}{\href{https://www.coursera.org/account/accomplishments/verify/TLPV567X6MVR}{[Certified]}}
 \resumeSubHeadingListEnd
-
-% Technical Skills
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-        \textbf{Data Science}{: Data Analysis, Data Visualization, Reporting \& Analysis, Data Engineering, Machine Learning} \\
-        \textbf{Tools}{: Python (Scikit-learn, Pandas, NumPy, Matplotlib, FastAPI), JavaScript (Apache ECharts), Tableau, Grafana, PostgreSQL, Microsoft SQL Server, Docker} \\
-        \textbf{General Tools}{: Git, Microsoft Office, Confluence, Jira, Trello} \\
-        \textbf{Languages}{: English (Fluent), Persian (Native)}
-    }}
-\end{itemize}
 
 \end{document}
